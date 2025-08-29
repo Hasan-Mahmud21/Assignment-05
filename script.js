@@ -26,7 +26,7 @@ for (let i = 0; i < callButtons.length; i++) {
             coinCountElement.innerText = coinCount;
         } else {
             alert("Insufficient coins to make a call.");
-            return; // terminate the process if coins are insufficient
+            return;
         }
 
         const callTime = new Date().toLocaleTimeString();
@@ -56,22 +56,36 @@ for (let i = 0; i < callButtons.length; i++) {
 
 // Copy button functionality
 const copyButtons = document.getElementsByClassName('copy-button');
+const numberToCopy = document.getElementsByClassName('number-to-copy')
 
 
 for (let i = 0; i < copyButtons.length; i++) {
     copyButtons[i].addEventListener('click', function() {
         console.log("Copy button clicked");
         alert("Phone Number Copied to Clipboard");
-        let numberOfCopyElement = document.getElementById('number-of-copy');
-        let copyCount = parseInt(numberOfCopyElement.innerText);
-        copyCount++;
-        numberOfCopyElement.innerText = copyCount;
         
-    
-    
+
+        const copyNumber = numberToCopy[i].innerText.trim();
+        navigator.clipboard.writeText(copyNumber).then(() => {
+            alert(`Phone Number Copied to Clipboard: ${copyNumber}`);
+        }).catch(err => {
+            console.error("Copy failed:", err);
+        });
 
         
+        let numberOfCopyElement = document.getElementById('number-of-copy');
+        let copyCount = parseInt(numberOfCopyElement.innerText) || 0;
+        copyCount++;
+        numberOfCopyElement.innerText = copyCount;
+
+        
+
+        
+      
         
     });
     
+    
 }
+
+
