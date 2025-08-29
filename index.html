@@ -7,8 +7,8 @@
     <title>Emergency Service | Home </title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 
-<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -26,7 +26,8 @@
             <h1 class="font-bold text-[#006747] text-5xl">Emergency Service</h1>
         </div>
         <div class="flex gap-5">
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl rounded-full bg-[#41ff6b1a] cursor-pointer">
+            <button
+                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl rounded-full bg-[#41ff6b1a] cursor-pointer">
                 <h2><span id="heartCount">0</span></h2>
                 <img src="assets/heart.png" alt="" class="w-7 h-7">
             </button>
@@ -39,7 +40,8 @@
             </button>
 
 
-            <button id="copy-button" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-[#00A63E] rounded-full">
+            <button id="copy-button"
+                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-[#00A63E] rounded-full">
                 <h2 class="text-white"><span id="number-of-copy">2</span> Copy</h2>
             </button>
 
@@ -67,7 +69,7 @@
                 <div id="card-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                     <div class="card bg-base-100 shadow-sm ">
                         <div class="flex justify-between items-center p-5">
-                            <div class=" w-20 h-20 bg-red-100 rounded-2xl ">
+                            <div class=" min-w-20 min-h-20 bg-red-100 rounded-2xl ">
                                 <img src="assets/emergency.png" alt="" class="w-10 h-10 mt-5 mx-auto">
                             </div>
                             <i class="fa-regular fa-heart text-xl font-semibold heart-count"></i>
@@ -79,14 +81,17 @@
                             <p class="text-[18px]">National Emergency</p>
 
                             <h2 class="phone-number font-bold text-3xl ">999</h2>
-                            <button class="btn w-12 rounded-2xl">All</button>
+                            <div class="inline-block">
+                                <button class="btn px-4 py-1">ALL</button>
+                            </div>
                             <div class="flex gap-3 mt-3">
                                 <button id="copy-element" class="copy-button btn rounded-xl flex-1 flex gap-2">
                                     <i class="fa-regular fa-copy"></i>
                                     <span>Copy</span>
 
                                 </button>
-                                <button class="call-button service-phone btn bg-[#00a63e] text-white rounded-xl flex-1 flex gap-2">
+                                <button
+                                    class="call-button service-phone btn bg-[#00a63e] text-white rounded-xl flex-1 flex gap-2">
                                     <i class="fa-solid fa-phone"></i>
                                     <span>Call</span>
                                 </button>
@@ -95,7 +100,7 @@
                     </div>
                     <div class="card bg-base-100 shadow-sm ">
                         <div class="flex justify-between items-center p-5">
-                            <div class=" w-20 h-20 bg-blue-100 rounded-2xl ">
+                            <div class=" min-w-20 min-h-20 bg-blue-100 rounded-2xl ">
                                 <img src="assets/police.png" alt="" class="w-10 h-10 mt-5 mx-auto">
                             </div>
                             <i class="fa-regular cursor-pointer fa-heart text-xl font-semibold heart-count"></i>
@@ -107,7 +112,9 @@
                             <p class="text-[18px]">Police</p>
 
                             <h2 class="phone-number font-bold text-3xl number-to-copy">999</h2>
-                            <button class="btn w-12 rounded-2xl">Police</button>
+                            <div class="inline-block">
+                                <button class="btn px-4 py-1 rounded-2xl">Police</button>
+                            </div>
                             <div class="flex gap-2 mt-3">
                                 <button id="copy-element" class="copy-button btn rounded-xl flex-1 flex gap-2">
                                     <i class="fa-regular fa-copy"></i>
@@ -123,7 +130,7 @@
                     </div>
                     <div class="card bg-base-100 shadow-sm ">
                         <div class="flex justify-between items-center p-5">
-                            <div class=" w-20 h-20 bg-red-100 rounded-2xl ">
+                            <div class="min-w-20 min-h-20 bg-red-100 rounded-2xl ">
                                 <img src="assets/fire-service.png" alt="" class="w-10 h-10 mt-5 mx-auto">
                             </div>
                             <i class="fa-regular cursor-pointer fa-heart text-xl font-semibold heart-count"></i>
@@ -135,7 +142,9 @@
                             <p class="text-[18px]">Fire Service</p>
 
                             <h2 class="phone-number font-bold text-3xl number-to-copy">999</h2>
-                            <button class="btn w-20 rounded-2xl">Fire</button>
+                            <div class="inline-block">
+                                <button class="btn rounded-2xl px-4 py-1">Electricity</button>
+                            </div>
                             <div class="flex gap-2 mt-3">
                                 <button id="copy-element" class="copy-button btn  rounded-xl flex-1 flex gap-2">
                                     <i class="fa-regular fa-copy"></i>
@@ -151,7 +160,7 @@
                     </div>
                     <div class="card bg-base-100 shadow-sm">
                         <div class="flex justify-between items-center p-5">
-                            <div class=" w-20 h-20 bg-red-100 rounded-2xl ">
+                            <div class=" min-w-20 min-h-20 bg-red-100 rounded-2xl ">
                                 <img src="assets/ambulance.png" alt="" class="w-10 h-10 mt-5 mx-auto">
                             </div>
                             <i class="fa-regular cursor-pointer fa-heart text-xl font-semibold heart-count"></i>
@@ -170,7 +179,8 @@
                                     <span>Copy</span>
 
                                 </button>
-                                <button class="copy-button call-button btn bg-[#00a63e] text-white rounded-xl flex-1 flex gap-2">
+                                <button
+                                    class="copy-button call-button btn bg-[#00a63e] text-white rounded-xl flex-1 flex gap-2">
                                     <i class="fa-solid fa-phone "></i>
                                     <span>Call</span>
                                 </button>
@@ -247,7 +257,10 @@
                             <p class="text-[18px]">Electricity Outage</p>
 
                             <h2 class="phone-number font-bold text-3xl number-to-copy">16216</h2>
-                            <button class="btn md:btn-md">Electricity</button>
+                            <div class="inline-block">
+                                <button class="btn px-4 py-1 rounded-2xl">Electricity</button>
+                            </div>
+
                             <div class="flex gap-2 mt-3">
                                 <button id="copy-element" class="copy-button btn rounded-xl flex-1 flex gap-2">
                                     <i class="fa-regular fa-copy"></i>
@@ -275,7 +288,9 @@
                             <p class="text-[18px]">Brac</p>
 
                             <h2 class="phone-number font-bold text-3xl number-to-copy">16445</h2>
-                            <button class="rounded-2xl">NGO</button>
+                            <div class="inline-block">
+                                <button class="btn px-4 py-1 rounded-2xl">NGO</button>
+                            </div>
                             <div class="flex gap-2 mt-3">
                                 <button id="copy-element" class="copy-button btn rounded-xl flex-1 flex gap-2">
                                     <i class="fa-regular fa-copy"></i>
@@ -322,20 +337,20 @@
                 </div>
             </section>
             <aside id="call-history-section" class="bg-white col-span-3">
-    <div class="flex justify-between items-center p-5">
-        <div class="flex items-center gap-3 p-3">
-            <i class="fa-solid fa-clock text-xl"></i>
-            <h1 class="text-2xl font-semibold">Call History</h1>
-        </div>
-        <button id="clear-history"
-            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl rounded-full bg-[#00a63e] text-white">
-            Clear
-        </button>
-    </div>
+                <div class="flex justify-between items-center p-5">
+                    <div class="flex items-center gap-3 p-3">
+                        <i class="fa-solid fa-clock text-xl"></i>
+                        <h1 class="text-2xl font-semibold">Call History</h1>
+                    </div>
+                    <button id="clear-history"
+                        class="btn mx-auto px-6 py-2 rounded-full bg-[#00a63e] text-white">
+                        Clear
+                    </button>
+                </div>
 
-    <!--  call history -->
-    <div id="history-list" class="m-5 space-y-3"></div>
-</aside>
+                <!--  call history -->
+                <div id="history-list" class="m-5 space-y-3"></div>
+            </aside>
 
         </section>
     </main>
