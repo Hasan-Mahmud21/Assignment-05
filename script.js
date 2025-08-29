@@ -31,7 +31,7 @@ for (let i = 0; i < callButtons.length; i++) {
 
         const callTime = new Date().toLocaleTimeString();
         const entry = document.createElement('div');
-        entry.classList.add("bg-gray-100", "shadow-sm", "rounded-lg", "p-3", "flex", "justify-between", "items-center", "mb-2");
+        entry.classList.add("bg-gray-100", "shadow-sm", "rounded-lg", "p-5", "flex", "justify-between", "items-center", "mb-2");
         entry.innerHTML = `
             <div>
                 <h3 class="font-bold text-xl">${serviceName}</h3>
